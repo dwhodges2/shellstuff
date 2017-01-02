@@ -1,0 +1,6 @@
+[user]
+	name = dwhodges2
+	email = dwhodges@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = false
