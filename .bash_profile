@@ -6,8 +6,8 @@ unalias -a
 
 alias   man='man -P less'
 alias   cp='cp -ip'
-alias   mv='mv -i'
-alias   rm='rm -i'
+#alias   mv='mv -i'
+#alias   rm='rm -i'
 alias   cls=clear
 alias    ..='cd ..'
 alias   lcd='ls -laFd * .*'
