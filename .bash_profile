@@ -21,7 +21,6 @@ alias   ac='abc'
 alias   m='less '
 alias   ll='ls -laF '
 
-
 alias   gs='git status'
 alias   ga='git add -A'
 alias   gp='git push origin master'
