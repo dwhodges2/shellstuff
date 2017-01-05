@@ -4,6 +4,7 @@
 [core]
 	autocrlf = input
 	safecrlf = false
+	editor = pico
 
 [alias]
     resetorigin = !git fetch origin && git reset --hard origin/master && git clean -f -d
