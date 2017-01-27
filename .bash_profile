@@ -26,6 +26,7 @@ alias   ga='git add -A'
 alias   gp='git push origin master'
 
 alias   bb='open -a bbedit ' 
+
 alias   p='pico ' 
 
 
