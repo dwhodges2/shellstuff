@@ -27,6 +27,7 @@ alias   gp='git push origin master'
 alias   gi='git init && tag GIT ./'
 
 alias   bb='open -a bbedit ' 
+
 alias   p='pico ' 
 
 
