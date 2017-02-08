@@ -94,7 +94,8 @@ module.exports = {
   plugins: [
     'hyper-statusline',
     'hyperterm-alternatescroll',
-    'hyperterm-atom-dark'
+    'hyperterm-atom-dark',
+    'hyperterm-dibdabs'
 ],
 
   // in development, you can create a directory under
