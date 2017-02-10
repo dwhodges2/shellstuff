@@ -24,10 +24,8 @@ alias   ll='ls -laF '
 alias   gs='git status'
 alias   ga='git add -A'
 alias   gp='git push origin master'
-alias   gi='git init && tag -a GIT ./'
 
 alias   bb='open -a bbedit ' 
-
 alias   p='pico ' 
 
 
@@ -36,16 +34,8 @@ alias   p='pico '
 alias   r='fc -s'
 
 
-
-case $TERM in
-  xterm*)
-    PS1="\[\033]0;Xterm: \w\007\]\t=\W> "    
-    ;;
-  *)
-    PS1="\t=\W> "
-    ;;
-esac
-# export PS1
+# Prompt
+PS1="\t=\W> "
 
 
 
