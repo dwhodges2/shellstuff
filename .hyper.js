@@ -1,5 +1,76 @@
 module.exports = {
   config: {
+  
+  
+      autoProfile: {
+      
+      prompts: [{
+          // 'MyHost:Documents me$ ' default MacOS bash prompt
+          pattern: '^(\\S+):(.*) ([a-z_][a-z0-9_\\-\\.]*[\\$]?)[\\$#]\\s*$',
+          hostname: 1,
+          path: 2,
+          username: 3
+        },{
+          // 'me@MyHost:~$ ' default Linux bash prompt
+          pattern: '^([a-z_][a-z0-9_\\-\\.]*[\\$]?)@(\\S+):([\\/~].*)[\\$#]\\s*$',
+          username: 1,
+          hostname: 2,
+          path: 3
+        },{
+          // 'me@MyHost ~> ' default fish prompt
+          pattern: '^([a-z_][a-z0-9_\\-\\.]*[\\$]?)@(\\S+) ([\\/~].*)[>#]\\s*',
+          username: 1,
+          hostname: 2,
+          path: 3
+        },{
+          // '[me@MyHost: ~]$ ' connect prompt
+          pattern: '^\\[(\\S+)@(\\S+) ([\\/~].*)\\][\\$#]\\s*$',
+          username: 1,
+          hostname: 2,
+          path: 3
+        },{
+          // cunix prompt
+          pattern: '^(\\-bash\\-4\\.1)[\\$#]\\s*$',
+          hostname: 1
+        },{
+          // 'time=path> ' dh custom prompt
+          pattern: '^(\\d+:\\d+:\\d+)=(.*)[>#]\\s*$',
+          path: 2
+        }
+      ],    
+          
+      
+      profiles: [
+      //{
+      //    triggers: [
+      //     'dwh2128@',
+      //    ],
+      //    backgroundColor: '#400'
+     //   },
+        {
+          triggers: [
+            '@connect' // connect shell
+          ],
+          backgroundColor: '#212F3C'
+        },
+        {
+          triggers: [
+            '@-bash-4.1'  // prompt for cunix shell
+          ],
+          backgroundColor: '#200'
+        },
+        {
+          triggers: [
+            '~'
+          ],
+          backgroundColor: '#004'
+        }
+      ],
+      stripAnsiColors: true, //default 
+      debug: true //default 
+    },
+  
+  
     // default font size in pixels for all tabs
     fontSize: 12,
 
@@ -95,7 +166,8 @@ module.exports = {
     'hyper-statusline',
     'hyperterm-alternatescroll',
     'hyperterm-atom-dark',
-    'hyperterm-dibdabs'
+    'hyperterm-dibdabs',
+    'hyper-autoprofile'
 ],
 
   // in development, you can create a directory under
