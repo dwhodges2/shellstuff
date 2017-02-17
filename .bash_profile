@@ -26,6 +26,7 @@ alias   ga='git add -A'
 alias   gp='git push origin master'
 
 alias   bb='open -a bbedit ' 
+alias   ox='open -a /Applications/Oxygen/Oxygen\ XML\ Editor.app/ '
 alias   p='pico ' 
 
 
