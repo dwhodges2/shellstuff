@@ -1,0 +1,12 @@
+Put executable scripts that contain paths to resources here. 
+
+	exec /path/to/application "$@"
+
+Path to this folder is in .bash_profile. 
+
+To make executable:
+
+	chmod u+x <filename>
+
+In new shell, can type name from any directory to execute.
+ 

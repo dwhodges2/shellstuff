@@ -1,6 +1,7 @@
 # User specific aliases and functions
 
 export PATH="/usr/local/mysql/bin:$PATH"
+export PATH=$PATH:~/bin
 
 unalias -a
 
