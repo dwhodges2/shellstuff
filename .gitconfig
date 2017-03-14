@@ -7,7 +7,17 @@
 	editor = pico
 
 [alias]
+
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
+    logtree = log --graph --oneline --decorate --all
+
+    cam = commit -a -m
+
     resetorigin = !git fetch origin && git reset --hard origin/master && git clean -f -d
     resetupstream = !git fetch upstream && git reset --hard upstream/master && git clean -f -d
+    
     ls = !git ls-tree -r master --name-only
 
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
