@@ -36,7 +36,13 @@ module.exports = {
           // 'time=path> ' dh custom prompt
           pattern: '^(\\d+:\\d+:\\d+)=(.*)[>#]\\s*$',
           path: 2
-        }
+        },{
+          // 'me@MyHost: [~]# ' bluehost prompt
+          pattern: '^([a-z_][a-z0-9_\\-\\.]*[\\$]?)@(\\S+) \\[([\\/~].*)\\][\\$#]\\s*$',
+          username: 1,
+          hostname: 2,
+          path: 3
+        },
       ],    
           
       
@@ -50,6 +56,12 @@ module.exports = {
         {
           triggers: [
             '@connect' // connect shell
+          ],
+          backgroundColor: '#143B00'
+        },
+        {
+          triggers: [
+            '@aaj.knn.mybluehost.me' // bluehost shell
           ],
           backgroundColor: '#212F3C'
         },
