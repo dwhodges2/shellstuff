@@ -24,7 +24,11 @@ alias   ll='ls -laF '
 
 alias   gs='git status'
 alias   ga='git add -A'
+alias   gco='git commit -am '
 alias   gp='git push origin master'
+alias   gpp='git push production master'
+alias   gppm='git push production +master:refs/heads/master'
+
 
 alias   bb='open -a bbedit ' 
 alias   ox='open -a /Applications/Oxygen/Oxygen\ XML\ Editor.app/ '
