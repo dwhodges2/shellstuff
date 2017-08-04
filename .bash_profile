@@ -3,6 +3,8 @@
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH=$PATH:~/bin
 
+source ~/git-completion.bash
+
 unalias -a
 
 alias   man='man -P less'
@@ -30,9 +32,9 @@ alias   gpp='git push production master'
 alias   gppm='git push production +master:refs/heads/master'
 
 
-alias   bb='open -a bbedit ' 
+alias   bb='open -a bbedit '
 alias   ox='open -a /Applications/Oxygen/Oxygen\ XML\ Editor.app/ '
-alias   p='pico ' 
+alias   p='pico '
 
 
 
@@ -74,7 +76,7 @@ function cdb
 
 function gc
 {
-  grep $* *.c 
+  grep $* *.c
 }
 
 function h
