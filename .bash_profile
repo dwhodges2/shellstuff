@@ -5,6 +5,9 @@ export PATH=$PATH:~/bin
 
 source ~/git-completion.bash
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+
 unalias -a
 
 alias   man='man -P less'
@@ -131,4 +134,3 @@ fc -lr -199 | awk -v N=$N 'BEGIN { if (N < 0) N = -N; } {
   if (ic >= N) exit;
 }'
 }
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
