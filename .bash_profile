@@ -131,3 +131,4 @@ fc -lr -199 | awk -v N=$N 'BEGIN { if (N < 0) N = -N; } {
   if (ic >= N) exit;
 }'
 }
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
